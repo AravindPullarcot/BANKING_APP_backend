@@ -1,0 +1,44 @@
+/* Add some styling to the table */
+body, html {
+    background-image: url('aesthetic-mountain-wallpaper-background-image_584397-109.jpg'); /* Replace with the actual image file path */
+    background-size: cover; /* This will scale the image to cover the entire background */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin for the body */
+    padding: 0; /* Remove default padding for the body */
+}
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto; /* Center the table horizontally */
+    max-width: 800px;
+    border: 1px solid #ddd;
+    background-image: url('aesthetic-mountain-wallpaper-background-image_584397-109.jpg'); /* Replace 'your-background-image.jpg' with the actual image file */
+    background-size: cover;
+}
+
+/* Style the table header */
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style the table rows */
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Add alternating row colors */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Add hover effect on table rows */
+table tr:hover {
+    background-color: #ddd;
+}

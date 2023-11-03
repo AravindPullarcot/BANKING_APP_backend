@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>WelcomePage</title>
+</head>
+<body>
+<!--<h1>Welcome Customer th:text="${first_name}">first_name th:text="${last_name}">last_name</h1>
+
+<h2 th:text="${first_name}">first_name</h2>
+<h2 th:text="${last_name}">last_name</h2>-->
+<h1 th:text="'Welcome ' + ${first_name} + ' ' + ${last_name}"></h1>
+<a href="http://localhost:63342/BankingMini/templates/Startingpage.html?_ijt=bh3duq51mnqtkhjgp8k7mhoa65&_ij_reload=RELOAD_ON_SAVE">Go Back</a>
+</body>
+</html>
