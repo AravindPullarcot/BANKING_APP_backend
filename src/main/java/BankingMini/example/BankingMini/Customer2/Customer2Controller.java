@@ -11,14 +11,19 @@ import java.util.List;
 
 public class Customer2Controller {
 
+
+    Customer2Service customer2Service;
+
     @Autowired
-    Customer2repository customer2repository;
+    public Customer2Controller(Customer2Service customer2Service) {
+        this.customer2Service = customer2Service;
+    }
 
     @GetMapping("/displayCustomers2")//c
-    String displayCustomers(ModelMap model) {// displays the table
-        List<Customer2> customer2List = customer2repository.findAll();
-        model.addAttribute("customers",customer2List);
-        return "TableDisplay";
+    String displayCustomers2(ModelMap model) {// displays the table
+        List<Customer2> customer2List = customer2Service.getAllCustomer();
+        model.addAttribute("customers2",customer2List);
+        return "Customer2TableDisplay";
     }
 
 }

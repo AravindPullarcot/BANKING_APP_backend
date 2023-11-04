@@ -9,6 +9,30 @@
 
 <!-- Link to the login page -->
 <a href="http://localhost:8080/api/register">Login</a>
-<a href=" http://localhost:8080/displayCustomers2">showtables</a>
+
+<h2>Show Tables:</h2>
+
+<!-- Dropdown menu for table selection -->
+<form id="tableForm">
+  <label for="tableSelect">Select a table:</label>
+  <select id="tableSelect" name="tableSelect">
+    <option value="table1">Table 1</option>
+    <option value="table2">Table 2</option>
+  </select>
+  <button type="button" onclick="redirectToSelectedTable()">OK</button>
+</form>
+
+<!-- JavaScript to redirect to the selected table -->
+<script>
+  function redirectToSelectedTable() {
+    const selectedTable = document.getElementById("tableSelect").value;
+    if (selectedTable === "table1") {
+      window.location.href = "http://localhost:8080/displayCustomers2";
+    } else if (selectedTable === "table2") {
+      window.location.href = "http://localhost:8080/api/customer1/displayCustomers1";
+    }
+  }
+</script>
+
 </body>
 </html>
